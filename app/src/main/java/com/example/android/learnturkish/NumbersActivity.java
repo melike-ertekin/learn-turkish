@@ -1,9 +1,7 @@
 package com.example.android.learnturkish;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -13,20 +11,20 @@ public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers_activity);
+        setContentView(R.layout.words_list);
 
         // Create list of words
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "bir"));
-        words.add(new Word("two", "iki"));
-        words.add(new Word("three","üç"));
-        words.add(new Word("four","dört"));
-        words.add(new Word("five", "beş"));
-        words.add(new Word("six","altı"));
-        words.add(new Word("seven","yedi"));
-        words.add(new Word("eight","sekiz"));
-        words.add(new Word("nine", "dokuz"));
-        words.add(new Word("ten", "on"));
+        words.add(new Word("one", "bir", R.drawable.number_one));
+        words.add(new Word("two", "iki", R.drawable.number_two));
+        words.add(new Word("three","üç", R.drawable.number_three));
+        words.add(new Word("four","dört", R.drawable.number_four));
+        words.add(new Word("five", "beş", R.drawable.number_five));
+        words.add(new Word("six","altı", R.drawable.number_six));
+        words.add(new Word("seven","yedi", R.drawable.number_seven));
+        words.add(new Word("eight","sekiz", R.drawable.number_eight));
+        words.add(new Word("nine", "dokuz", R.drawable.number_nine));
+        words.add(new Word("ten", "on", R.drawable.number_ten));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
