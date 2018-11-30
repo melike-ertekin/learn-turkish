@@ -16,6 +16,9 @@ public class Word {
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    /** Audio resource ID for the word */
+    private int mAudioResourceId;
+
 
     /**
      * Create a new Word object.
@@ -24,12 +27,15 @@ public class Word {
      *                           (such as English)
      * @param turkishTranslation is the word in the Turkish language
      *
-     * @param ImageResourceId is the resource ID of image for the word.
+     * @param imageResourceId is the resource ID of image for the word.
+     *
+     * @param audioResourceId is the resource ID of audio for the word.
      */
-    public Word(String defaultTranslation, String turkishTranslation, int ImageResourceId) {
+    public Word(String defaultTranslation, String turkishTranslation, int imageResourceId, int audioResourceId) {
         this.mDefaultTranslation = defaultTranslation;
         this.mTurkishTranslation = turkishTranslation;
-        this.mImageResourceId =  ImageResourceId;
+        this.mImageResourceId =  imageResourceId;
+        this.mAudioResourceId = audioResourceId;
     }
 
     /**
@@ -39,11 +45,11 @@ public class Word {
      *                           (such as English)
      * @param turkishTranslation is the word in the Turkish language
      */
-    public Word(String defaultTranslation, String turkishTranslation) {
+    public Word(String defaultTranslation, String turkishTranslation /*, int audioResourceId*/) {
         this.mDefaultTranslation = defaultTranslation;
         this.mTurkishTranslation = turkishTranslation;
-
-    }
+       // this.mAudioResourceId = audioResourceId;
+        }
 
 
     /**
@@ -70,5 +76,12 @@ public class Word {
      */
     public boolean hasImage(){
         return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    /**
+     * Get the Audio resource ID of the word.
+     */
+    public int getAudioResourceId() {
+        return mAudioResourceId;
     }
 }
