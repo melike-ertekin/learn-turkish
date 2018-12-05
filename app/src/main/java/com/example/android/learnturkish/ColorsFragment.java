@@ -114,7 +114,7 @@ public class ColorsFragment extends Fragment {
                 // Release the media player if it currently exists because we are about to
                 // play a different sound file
                 releaseMediaPlayer();
-                // Toast.makeText(NumbersActivity.this, "list item clicked", Toast.LENGTH_SHORT).show();
+
 
                 // Get the {@link Word} object at the given position the user clicked on
                 Word color = colors.get(position);

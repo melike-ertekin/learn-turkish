@@ -110,7 +110,7 @@ public class FamilyFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Toast.makeText(NumbersActivity.this, "list item clicked", Toast.LENGTH_SHORT).show();
+
 
                 // Release the media player if it currently exists because we are about to
                 // play a different sound file
