@@ -28,15 +28,15 @@ public class PhrasesFragment extends Fragment {
         // Create list of familyMembers words
         ArrayList<Word> phrases = new ArrayList<Word>();
 
-        phrases.add(new Word("What is your name?", "Senin adin ne?"));
-        phrases.add(new Word("My name is...", "Benim adim..."));
-        phrases.add(new Word("How are you?", "Nasilsin?"));
-        phrases.add(new Word("I am good.", "iyiyim."));
-        phrases.add(new Word("Where are you going?", "Nereye gidiyorsun?"));
-        phrases.add(new Word("How old are you?", "Kac yasindasin"));
-        phrases.add(new Word("I am ... years old.", "Ben ... yasindayim."));
-        phrases.add(new Word("Let’s go.", "Hadi gidelim."));
-        phrases.add(new Word("Come here.", "Buraya gel."));
+        phrases.add(new Word("What is your name?", "İsminiz nedir?"));
+        phrases.add(new Word("My name is...", "Benim Adım ..."));
+        phrases.add(new Word("How are you?", "Nasılsınız?"));
+        phrases.add(new Word("I am good.", "İyiyim."));
+        phrases.add(new Word("Where are you from?", "Nerelisiniz?"));
+        phrases.add(new Word("Good morning", "Günaydın"));
+        phrases.add(new Word("How old are you?", "Kaç yaşındasınız"));
+        phrases.add(new Word("I am ... years old.", "Ben ... yaşındayım."));
+        phrases.add(new Word("Thank you", "Teşekkür ederim"));
         phrases.add(new Word("I love you.", "Seni seviyorum."));
 
 
